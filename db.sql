@@ -1,3 +1,6 @@
+CREATE USER 'csye6225master'@'localhost' IDENTIFIED BY 'csye6225password';
+GRANT ALL PRIVILEGES ON *.* TO 'csye6225master'@'localhost' WITH GRANT OPTION;
+
 CREATE DATABASE  IF NOT EXISTS `accounts`;
 USE `accounts`;
 --
