@@ -33,7 +33,7 @@ sudo echo [/var/lib/tomcat8/logs/catalina.out] >> ~/awslogs.conf
 sudo echo file = /var/lib/tomcat8/logs/catalina.out >> ~/awslogs.conf
 sudo echo "log_group_name = myloggroup" >> ~/awslogs.conf
 sudo echo "log_stream_name = myweblogstream" >> ~/awslogs.conf
-sudo echo "datetime_format = %d/%b/%Y:%H:%M:%S\" >> ~/awslogs.conf
+sudo echo "datetime_format = %d/%b/%Y:%H:%M:%S" >> ~/awslogs.conf
 cd ~
 sudo curl https://s3.amazonaws.com/aws-cloudwatch/downloads/latest/awslogs-agent-setup.py -O >> ~/cloudwatch.log
 sudo chmod 777 ~/awslogs-agent-setup.py >> ~/awslogs.conf
