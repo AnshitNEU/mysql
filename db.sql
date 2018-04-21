@@ -1,12 +1,7 @@
 CREATE USER 'csye6225master'@'localhost' IDENTIFIED BY 'csye6225password';
 GRANT ALL PRIVILEGES ON *.* TO 'csye6225master'@'localhost' WITH GRANT OPTION;
-
 CREATE DATABASE  IF NOT EXISTS `accounts`;
 USE `accounts`;
---
--- Table structure for table `role`
---
-
 DROP TABLE IF EXISTS `role`;
 CREATE TABLE `role` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -14,17 +9,9 @@ CREATE TABLE `role` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `role`
---
-
 LOCK TABLES `role` WRITE;
 INSERT INTO `role` VALUES (1,'ROLE_USER');
 UNLOCK TABLES;
-
---
--- Table structure for table `user`
---
 
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
@@ -35,10 +22,6 @@ CREATE TABLE `user` (
   `aboutme` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
-
---
--- Table structure for table `user_role`
---
 
 DROP TABLE IF EXISTS `user_role`;
 CREATE TABLE `user_role` (
